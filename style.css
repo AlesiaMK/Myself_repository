@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    font-weight: 600;
+}
+
+body {
+    background-color: #EEE2DC;
+}
+
+section,
+.basement {
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #948ca2;
+}
+
+.head {
+    padding: 44px 340px 45px 360px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+    margin-left: 30px;
+}
+
+.menu__item {
+    box-sizing: border-box;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.menu__item:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 1.5px;
+    height: 16px;
+}
+
+.myself {
+    padding: 218px 0 185px;
+}
+
+.myself__caption {
+    font-size: 1.4rem;
+    color: #AC3B61;
+    margin-bottom: 30px;
+}
+
+.myself__text {
+    font-size: .9rem;
+    margin-bottom: 63px;
+}
+
+.about-me__photo {
+    margin-bottom: 30px;
+}
+
+.about-me img {
+    width: 100%;
+    max-width: 398px;
+    border-radius: 15%;
+}
+
+.web-sites,
+.hobby {
+    padding: 218px 0 185px;
+}
+
+.text {
+    font-weight: 400;
+    margin: 35px 250px 60px;
+}
+
+.caption {
+    margin: 0 auto;
+    color: #C38D9E;
+    font: bold 1.2em normal sans-serif;
+    text-transform: capitalize;
+}
+
+.favorite-films {
+    padding: 100px 24px 0;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.links__item {
+    margin-top: 30px;
+    width: calc((100% - 40px*2)/3);
+    height: 350px;
+}
+
+.links__item:nth-last-of-type(2) {
+    margin-right: 78px;
+}
+
+.links__item:hover {
+    transform: scale(1.5, 1.5);
+}
+
+.basement {
+    background-color: #262626;
+}
+
+.contacts {
+    margin-top: 30px;
+}
+
+.contacts__link {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+i {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #262626;
+    line-height: 50px;
+}
