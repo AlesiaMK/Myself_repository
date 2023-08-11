@@ -13,6 +13,7 @@ html {
 
 body {
     background-color: #EEE2DC;
+    font-family: 'Pacifico', sans-serif;
 }
 
 section,
@@ -23,6 +24,12 @@ section,
 a {
     text-decoration: none;
     color: #948ca2;
+}
+
+.background {
+    background-image: url(./images/soft-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .head {
