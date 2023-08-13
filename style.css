@@ -1,152 +1,272 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 25px;
-    color: #000;
-    text-align: center;
-    font-weight: 600;
-}
-
-body {
-    background-color: #EEE2DC;
-    font-family: 'Pacifico', sans-serif;
-}
-
-section,
-.basement {
-    padding: 100px 0;
-}
-
-a {
-    text-decoration: none;
-    color: #948ca2;
-}
-
-.background {
-    background-image: url(./images/soft-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.head {
-    padding: 44px 340px 45px 360px;
-    background-color: rgba(0, 0, 0, 0.16);
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    font-size: .7rem;
-    margin-left: 30px;
-}
-
-.menu__item {
-    box-sizing: border-box;
-}
-
-.menu__item:not(:last-child) {
-    margin-right: 25px;
-}
-
-.menu__item:not(:last-child)::after {
-    content: "";
-    display: inline-block;
-    width: 1.5px;
-    height: 16px;
-}
-
-.myself {
-    padding: 218px 0 185px;
-}
-
-.myself__caption {
-    font-size: 1.4rem;
-    color: #AC3B61;
-    margin-bottom: 30px;
-}
-
-.myself__text {
-    font-size: .9rem;
-    margin-bottom: 63px;
-}
-
-.about-me__photo {
-    margin-bottom: 30px;
-}
-
-.about-me img {
-    width: 100%;
-    max-width: 398px;
-    border-radius: 15%;
-}
-
-.web-sites,
-.hobby {
-    padding: 218px 0 185px;
-}
-
-.text {
-    font-weight: 400;
-    margin: 35px 250px 60px;
-}
-
-.caption {
-    margin: 0 auto;
-    color: #C38D9E;
-    font: bold 1.2em normal sans-serif;
-    text-transform: capitalize;
-}
-
-.favorite-films {
-    padding: 100px 24px 0;
-}
-
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-
-.links__item {
-    margin-top: 30px;
-    width: calc((100% - 40px*2)/3);
-    height: 350px;
-}
-
-.links__item:nth-last-of-type(2) {
-    margin-right: 78px;
-}
-
-.links__item:hover {
-    transform: scale(1.5, 1.5);
-}
-
-.basement {
-    background-color: #262626;
-}
-
-.contacts {
-    margin-top: 30px;
-}
-
-.contacts__link {
-    display: inline-block;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    text-decoration: none;
-}
-
-i {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #262626;
-    line-height: 50px;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 25px;
+            color: #000;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        body {
+            background-color: #EEE2DC;
+            font-family: 'Pacifico', sans-serif;
+        }
+        
+        section,
+        .basement {
+            padding: 100px 0;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #948ca2;
+        }
+        
+        .background {
+            background-image: url(./images/soft-background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .head {
+            padding: 44px 340px 45px 360px;
+            background-color: rgba(0, 0, 0, 0.16);
+        }
+        
+        @media screen and (max-width:1376px) {
+            .head {
+                padding: 44px 118px 45px 132px;
+            }
+        }
+        
+        @media screen and (max-width:920px) {
+            .head {
+                padding: 13px 31px 13px 42px;
+            }
+        }
+        
+        @media screen and (max-width:750px) {
+            .head {
+                padding: 8px 13px 8px 24px;
+            }
+        }
+        
+        @media screen and (max-width:715px) {
+            .head {
+                padding: 8px 20px;
+            }
+        }
+        
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .7rem;
+            margin-left: 30px;
+        }
+        
+        .menu__item {
+            box-sizing: border-box;
+        }
+        
+        .menu__item:not(:last-child) {
+            margin-right: 25px;
+        }
+        
+        .menu__item:not(:last-child)::after {
+            content: "";
+            display: inline-block;
+            width: 1.5px;
+            height: 16px;
+        }
+        
+        @media screen and (max-width:715px) {
+            .menu {
+                flex-direction: column;
+            }
+        }
+        
+        .myself {
+            padding: 218px 0 185px;
+        }
+        
+        .myself__caption {
+            font-size: 1.6rem;
+            color: #AC3B61;
+            margin-bottom: 30px;
+        }
+        
+        .myself__text {
+            font-size: .9rem;
+            margin-bottom: 63px;
+        }
+        
+        .about-me__photo {
+            margin-bottom: 30px;
+        }
+        
+        .about-me img {
+            width: 100%;
+            max-width: 380px;
+            border-radius: 15%;
+        }
+        
+        @media screen and (max-width:1465px) {
+            .about-me img {
+                max-width: 295px;
+            }
+        }
+        
+        @media screen and (max-width:695px) {
+            .about-me img {
+                max-width: 245px;
+            }
+        }
+        
+        .web-sites,
+        .hobby {
+            padding: 218px 0 185px;
+        }
+        
+        .text {
+            font-weight: 400;
+            margin: 0 auto;
+            max-width: 520px;
+        }
+        
+        .caption {
+            margin: 30px 0;
+            color: #C38D9E;
+            font: bold 1.2em normal sans-serif;
+            text-transform: capitalize;
+        }
+        
+        .favorite-films {
+            padding: 100px 24px 0;
+        }
+        
+        .links {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .links__item {
+            margin: 30px 0;
+            width: calc((100% - 40px*2)/3);
+            max-width: 300px;
+        }
+        
+        .links__item:not(:last-child) {
+            margin-right: 48px;
+        }
+        
+        .links__item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .links__item:hover {
+            transform: scale(1.5, 1.5);
+        }
+        
+        @media screen and (max-width:1210px) {
+            .links__item {
+                width: calc((100% - 30px*2)/3);
+                max-width: 250px;
+            }
+            .links__item:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        
+        @media screen and (max-width:950px) {
+            .links__item {
+                max-width: 220px;
+            }
+        }
+        
+        @media screen and (max-width:795px) {
+            .links__item {
+                width: calc((100% - 33px*2)/3);
+                max-width: 200px;
+            }
+            .links__item:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+        
+        .basement {
+            background-color: #262626;
+        }
+        
+        .contacts {
+            margin-top: 30px;
+        }
+        
+        .contacts__link {
+            display: inline-block;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            text-decoration: none;
+        }
+        
+        .contacts__link i {
+            font-size: 1.2rem;
+            color: #262626;
+            line-height: 50px;
+        }
+        
+        @media screen and (max-width:1024px) {
+            html {
+                font-size: 18px;
+            }
+            .myself__caption {
+                font-size: 2.3rem;
+            }
+            .caption {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media screen and (max-width:803px) {
+            html {
+                font-size: 23px;
+            }
+            .myself__caption {
+                font-size: 1.6rem;
+            }
+            .caption {
+                font-size: 1.2rem;
+            }
+            .wrapper {
+                padding: 0 50px;
+            }
+        }
+        
+        @media screen and (max-width:520) {
+            html {
+                font-size: 17px;
+            }
+            .caption {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media screen and (max-width:560px) {
+            .contacts__link {
+                width: 40px;
+                height: 40px;
+            }
+            .contacts__link i {
+                font-size: .9rem;
+                line-height: 30px;
+            }
+        }
